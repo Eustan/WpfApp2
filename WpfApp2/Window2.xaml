@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp2.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <ComboBox Margin="235, 114, 210, 260" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="yuy" Selected="ComboBoxItem_Selected_3"/>
+            <ComboBoxItem Content="uyu" Selected="ComboBoxItem_Selected_2"></ComboBoxItem>
+            <ComboBoxItem Content="wew" Selected="ComboBoxItem_Selected_1"/>
+            <ComboBoxItem>
+                <StackPanel>
+                    <TextBlock FontSize="25">
+                        Hello world
+                    </TextBlock>
+                    <TextBlock>Hello 2</TextBlock>
+               
+                </StackPanel>
+            </ComboBoxItem>
+        </ComboBox>
+        <Image x:Name="DisplayImage" Height="200" Margin="235,182,195,41"/>
+    </Grid>
+</Window>
